@@ -1,19 +1,20 @@
 export default function Home() {
   const cardStyle = `
     px-8 m-2 py-4 max-w-sm rounded-md border
-    hover:border-blue-300 hover:text-blue-300 hover:underline
+    hover:border-pink-300 hover:text-pink-300
+    hover:underline hover:shadow-md
   `;
   return (
     <>
       <h1 class="text-2xl text-center py-16">
         <p>Welcome to</p>
         <p class="text-4xl">
-          my <span class="text-yellow-300">lab</span>
-          🧑🏽‍🔬
+          my <span class="text-yellow-300">playground</span>
+          🛝
         </p>
       </h1>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center flex-wrap">
         {links.map((item) => (
           <a href={item.link}>
             <div class={cardStyle}>
@@ -27,8 +28,10 @@ export default function Home() {
 }
 
 const links: LinkItem[] = [
-  { name: "About Me", link: "https://marco.tremtec.com" },
-  { name: "Playground", link: "/playground/" },
+  { name: "Github Finder", link: "/playground/github" },
+  { name: "Counter", link: "/playground/counter" },
+  { name: "Game of Life", link: "/playground/game-of-life" },
+  { name: "Minesweeper", link: "/playground/minesweeper" },
 ];
 
 interface LinkItem {
