@@ -1,0 +1,34 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # The OIDC ID token is used for authentication with JSR.
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx jsr publish
+
+  release:
+    runs-on: ubuntu-latest
+    needs: publish
+    steps:
+      - uses: actions/checkout@v4
+      - name: parse tag name
+        run: |
+          version=$(echo $tag | sed 's/refs\/tags\///')
+          echo "Creating release $version"
+          echo "version=$version" >> $GITHUB_ENV
+        env:
+          tag: ${{ github.ref }}
+      - name: create release
+        run: gh release create -t "Release $version 🚀 " --generate-notes $version
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          version: ${{ env.version }}
