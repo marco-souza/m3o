@@ -1,4 +1,4 @@
-import { define } from "../../utils.ts";
+import { define } from "#/utils.ts";
 import { JSDOM } from "jsdom";
 
 const PROFILE_FETCH =
@@ -12,6 +12,7 @@ export const handler = define.handlers({
 
     const packages = Array.from(
       document.querySelectorAll(`ol > li > a`),
+      // deno-lint-ignore no-explicit-any
     ).map((pkg: any) => pkg?.textContent);
 
     return new Response(
