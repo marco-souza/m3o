@@ -1,0 +1,6 @@
+{
+  "name": "@m3o/yaml",
+  "version": "0.1.0",
+  "exports": "./yaml.ts",
+  "license": "MIT"
+}

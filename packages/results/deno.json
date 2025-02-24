@@ -2,8 +2,5 @@
   "name": "@m3o/resutls",
   "version": "0.1.0",
   "exports": "./results.ts",
-  "license": "MIT",
-  "imports": {
-    "@std/path": "jsr:@std/path@1"
-  }
+  "license": "MIT"
 }

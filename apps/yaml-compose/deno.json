@@ -1,0 +1,13 @@
+{
+  "name": "@m3o/yaml-compose",
+  "version": "0.2.12",
+  "exports": "./main.ts",
+  "license": "MIT",
+  "tasks": {
+    "run": "deno run --allow-read --allow-write --watch main.ts",
+    "install": "deno compile --allow-read --allow-write -o $HOME/.local/bin/yaml-compose main.ts"
+  },
+  "imports": {
+    "@std/path": "jsr:@std/path@1"
+  }
+}
