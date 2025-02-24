@@ -31,6 +31,7 @@
     "npm:cssnano@6.0.3": "6.0.3_postcss@8.4.35",
     "npm:esbuild-wasm@0.23.1": "0.23.1",
     "npm:esbuild@0.23.1": "0.23.1",
+    "npm:jsdom@26": "26.0.0",
     "npm:postcss@8.4.35": "8.4.35",
     "npm:preact-render-to-string@^6.5.11": "6.5.13_preact@10.26.2",
     "npm:preact@^10.25.1": "10.26.2",
@@ -148,6 +149,44 @@
   "npm": {
     "@alloc/quick-lru@5.2.0": {
       "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="
+    },
+    "@asamuzakjp/css-color@2.8.3_@csstools+css-parser-algorithms@3.0.4__@csstools+css-tokenizer@3.0.3_@csstools+css-tokenizer@3.0.3": {
+      "integrity": "sha512-GIc76d9UI1hCvOATjZPyHFmE5qhRccp3/zGfMPapK3jBi+yocEzp6BBB0UnfRYP9NP4FANqUZYb0hnfs3TM3hw==",
+      "dependencies": [
+        "@csstools/css-calc",
+        "@csstools/css-color-parser",
+        "@csstools/css-parser-algorithms",
+        "@csstools/css-tokenizer",
+        "lru-cache"
+      ]
+    },
+    "@csstools/color-helpers@5.0.2": {
+      "integrity": "sha512-JqWH1vsgdGcw2RR6VliXXdA0/59LttzlU8UlRT/iUUsEeWfYq8I+K0yhihEUTTHLRm1EXvpsCx3083EU15ecsA=="
+    },
+    "@csstools/css-calc@2.1.2_@csstools+css-parser-algorithms@3.0.4__@csstools+css-tokenizer@3.0.3_@csstools+css-tokenizer@3.0.3": {
+      "integrity": "sha512-TklMyb3uBB28b5uQdxjReG4L80NxAqgrECqLZFQbyLekwwlcDDS8r3f07DKqeo8C4926Br0gf/ZDe17Zv4wIuw==",
+      "dependencies": [
+        "@csstools/css-parser-algorithms",
+        "@csstools/css-tokenizer"
+      ]
+    },
+    "@csstools/css-color-parser@3.0.8_@csstools+css-parser-algorithms@3.0.4__@csstools+css-tokenizer@3.0.3_@csstools+css-tokenizer@3.0.3": {
+      "integrity": "sha512-pdwotQjCCnRPuNi06jFuP68cykU1f3ZWExLe/8MQ1LOs8Xq+fTkYgd+2V8mWUWMrOn9iS2HftPVaMZDaXzGbhQ==",
+      "dependencies": [
+        "@csstools/color-helpers",
+        "@csstools/css-calc",
+        "@csstools/css-parser-algorithms",
+        "@csstools/css-tokenizer"
+      ]
+    },
+    "@csstools/css-parser-algorithms@3.0.4_@csstools+css-tokenizer@3.0.3": {
+      "integrity": "sha512-Up7rBoV77rv29d3uKHUIVubz1BTcgyUK72IvCQAbfbMv584xHcGKCKbWh7i8hPrRJ7qU4Y8IO3IY9m+iTB7P3A==",
+      "dependencies": [
+        "@csstools/css-tokenizer"
+      ]
+    },
+    "@csstools/css-tokenizer@3.0.3": {
+      "integrity": "sha512-UJnjoFsmxfKUdNYdWgOB0mWUypuLvAfQPH1+pyvRJs6euowbFkFC6P13w1l8mJyi3vxYMxc9kld5jZEGRQs6bw=="
     },
     "@esbuild/aix-ppc64@0.23.1": {
       "integrity": "sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ=="
@@ -299,6 +338,9 @@
     "@trysound/sax@0.2.0": {
       "integrity": "sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA=="
     },
+    "agent-base@7.1.3": {
+      "integrity": "sha512-jRR5wdylq8CkOe6hei19GGZnxM6rBGwFl3Bg0YItGDimvjGtAvdZk4Pu6Cl4u4Igsws4a1fd1Vq3ezrhn4KmFw=="
+    },
     "ansi-regex@5.0.1": {
       "integrity": "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="
     },
@@ -326,6 +368,9 @@
     },
     "arg@5.0.2": {
       "integrity": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg=="
+    },
+    "asynckit@0.4.0": {
+      "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q=="
     },
     "autoprefixer@10.4.17_postcss@8.4.35": {
       "integrity": "sha512-/cpVNRLSfhOtcGflT13P2794gVSgmPgTR+erw5ifnMLZb0UnSlkK4tquLmkd3BhA+nLo5tX8Cu0upUsGKvKbmg==",
@@ -408,6 +453,12 @@
     },
     "colord@2.9.3": {
       "integrity": "sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw=="
+    },
+    "combined-stream@1.0.8": {
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+      "dependencies": [
+        "delayed-stream"
+      ]
     },
     "commander@4.1.1": {
       "integrity": "sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA=="
@@ -514,6 +565,32 @@
       "dependencies": [
         "css-tree@2.2.1"
       ]
+    },
+    "cssstyle@4.2.1": {
+      "integrity": "sha512-9+vem03dMXG7gDmZ62uqmRiMRNtinIZ9ZyuF6BdxzfOD+FdN5hretzynkn0ReS2DO2GSw76RWHs0UmJPI2zUjw==",
+      "dependencies": [
+        "@asamuzakjp/css-color",
+        "rrweb-cssom"
+      ]
+    },
+    "data-urls@5.0.0": {
+      "integrity": "sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==",
+      "dependencies": [
+        "whatwg-mimetype",
+        "whatwg-url"
+      ]
+    },
+    "debug@4.4.0": {
+      "integrity": "sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==",
+      "dependencies": [
+        "ms"
+      ]
+    },
+    "decimal.js@10.5.0": {
+      "integrity": "sha512-8vDa8Qxvr/+d94hSh5P3IJwI5t8/c0KsMp+g8bNw9cY2icONa5aPfvKeieW1WlG0WQYwwhJ7mjui2xtiePQSXw=="
+    },
+    "delayed-stream@1.0.0": {
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ=="
     },
     "didyoumean@1.2.2": {
       "integrity": "sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw=="
@@ -625,6 +702,14 @@
         "signal-exit"
       ]
     },
+    "form-data@4.0.1": {
+      "integrity": "sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==",
+      "dependencies": [
+        "asynckit",
+        "combined-stream",
+        "mime-types"
+      ]
+    },
     "fraction.js@4.3.7": {
       "integrity": "sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew=="
     },
@@ -663,6 +748,32 @@
         "function-bind"
       ]
     },
+    "html-encoding-sniffer@4.0.0": {
+      "integrity": "sha512-Y22oTqIU4uuPgEemfz7NDJz6OeKf12Lsu+QC+s3BVpda64lTiMYCyGwg5ki4vFxkMwQdeZDl2adZoqUgdFuTgQ==",
+      "dependencies": [
+        "whatwg-encoding"
+      ]
+    },
+    "http-proxy-agent@7.0.2": {
+      "integrity": "sha512-T1gkAiYYDWYx3V5Bmyu7HcfcvL7mUrTWiM6yOfa3PIphViJ/gFPbvidQ+veqSOHci/PxBcDabeUNCzpOODJZig==",
+      "dependencies": [
+        "agent-base",
+        "debug"
+      ]
+    },
+    "https-proxy-agent@7.0.6": {
+      "integrity": "sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==",
+      "dependencies": [
+        "agent-base",
+        "debug"
+      ]
+    },
+    "iconv-lite@0.6.3": {
+      "integrity": "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==",
+      "dependencies": [
+        "safer-buffer"
+      ]
+    },
     "is-binary-path@2.1.0": {
       "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",
       "dependencies": [
@@ -690,6 +801,9 @@
     "is-number@7.0.0": {
       "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng=="
     },
+    "is-potential-custom-element-name@1.0.1": {
+      "integrity": "sha512-bCYeRA2rVibKZd+s2625gGnGF/t7DSqDs4dP7CrLA1m7jKWz6pps0LpYLJN8Q64HtmPKJ1hrN3nzPNKFEKOUiQ=="
+    },
     "isexe@2.0.0": {
       "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
     },
@@ -702,6 +816,32 @@
     },
     "jiti@1.21.7": {
       "integrity": "sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A=="
+    },
+    "jsdom@26.0.0": {
+      "integrity": "sha512-BZYDGVAIriBWTpIxYzrXjv3E/4u8+/pSG5bQdIYCbNCGOvsPkDQfTVLAIXAf9ETdCpduCVTkDe2NNZ8NIwUVzw==",
+      "dependencies": [
+        "cssstyle",
+        "data-urls",
+        "decimal.js",
+        "form-data",
+        "html-encoding-sniffer",
+        "http-proxy-agent",
+        "https-proxy-agent",
+        "is-potential-custom-element-name",
+        "nwsapi",
+        "parse5",
+        "rrweb-cssom",
+        "saxes",
+        "symbol-tree",
+        "tough-cookie",
+        "w3c-xmlserializer",
+        "webidl-conversions",
+        "whatwg-encoding",
+        "whatwg-mimetype",
+        "whatwg-url",
+        "ws",
+        "xml-name-validator"
+      ]
     },
     "lilconfig@3.1.3": {
       "integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw=="
@@ -734,6 +874,15 @@
         "picomatch"
       ]
     },
+    "mime-db@1.52.0": {
+      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg=="
+    },
+    "mime-types@2.1.35": {
+      "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "dependencies": [
+        "mime-db"
+      ]
+    },
     "minimatch@9.0.5": {
       "integrity": "sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==",
       "dependencies": [
@@ -742,6 +891,9 @@
     },
     "minipass@7.1.2": {
       "integrity": "sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw=="
+    },
+    "ms@2.1.3": {
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
     },
     "mz@2.7.0": {
       "integrity": "sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==",
@@ -769,6 +921,9 @@
         "boolbase"
       ]
     },
+    "nwsapi@2.2.16": {
+      "integrity": "sha512-F1I/bimDpj3ncaNDhfyMWuFqmQDBwDB0Fogc2qpL3BWvkQteFD/8BzWuIRl83rq0DXfm8SGt/HFhLXZyljTXcQ=="
+    },
     "object-assign@4.1.1": {
       "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
     },
@@ -777,6 +932,12 @@
     },
     "package-json-from-dist@1.0.1": {
       "integrity": "sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw=="
+    },
+    "parse5@7.2.1": {
+      "integrity": "sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==",
+      "dependencies": [
+        "entities"
+      ]
     },
     "path-key@3.1.1": {
       "integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q=="
@@ -1070,6 +1231,9 @@
     "preact@10.26.2": {
       "integrity": "sha512-0gNmv4qpS9HaN3+40CLBAnKe0ZfyE4ZWo5xKlC1rVrr0ckkEvJvAQqKaHANdFKsGstoxrY4AItZ7kZSGVoVjgg=="
     },
+    "punycode@2.3.1": {
+      "integrity": "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg=="
+    },
     "queue-microtask@1.2.3": {
       "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
     },
@@ -1096,10 +1260,22 @@
     "reusify@1.0.4": {
       "integrity": "sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw=="
     },
+    "rrweb-cssom@0.8.0": {
+      "integrity": "sha512-guoltQEx+9aMf2gDZ0s62EcV8lsXR+0w8915TC3ITdn2YueuNjdAYh/levpU9nFaoChh9RUS5ZdQMrKfVEN9tw=="
+    },
     "run-parallel@1.2.0": {
       "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
       "dependencies": [
         "queue-microtask"
+      ]
+    },
+    "safer-buffer@2.1.2": {
+      "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
+    },
+    "saxes@6.0.0": {
+      "integrity": "sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==",
+      "dependencies": [
+        "xmlchars"
       ]
     },
     "shebang-command@2.0.0": {
@@ -1180,6 +1356,9 @@
         "picocolors"
       ]
     },
+    "symbol-tree@3.2.4": {
+      "integrity": "sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw=="
+    },
     "tailwindcss@3.4.17_postcss@8.5.2": {
       "integrity": "sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==",
       "dependencies": [
@@ -1219,10 +1398,31 @@
         "any-promise"
       ]
     },
+    "tldts-core@6.1.78": {
+      "integrity": "sha512-jS0svNsB99jR6AJBmfmEWuKIgz91Haya91Z43PATaeHJ24BkMoNRb/jlaD37VYjb0mYf6gRL/HOnvS1zEnYBiw=="
+    },
+    "tldts@6.1.78": {
+      "integrity": "sha512-fSgYrW0ITH0SR/CqKMXIruYIPpNu5aDgUp22UhYoSrnUQwc7SBqifEBFNce7AAcygUPBo6a/gbtcguWdmko4RQ==",
+      "dependencies": [
+        "tldts-core"
+      ]
+    },
     "to-regex-range@5.0.1": {
       "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",
       "dependencies": [
         "is-number"
+      ]
+    },
+    "tough-cookie@5.1.0": {
+      "integrity": "sha512-rvZUv+7MoBYTiDmFPBrhL7Ujx9Sk+q9wwm22x8c8T5IJaR+Wsyc7TNxbVxo84kZoRJZZMazowFLqpankBEQrGg==",
+      "dependencies": [
+        "tldts"
+      ]
+    },
+    "tr46@5.0.0": {
+      "integrity": "sha512-tk2G5R2KRwBd+ZN0zaEXpmzdKyOYksXwywulIX95MBODjSzMIuQnQ3m8JxgbhnL1LeVo7lqQKsYa1O3Htl7K5g==",
+      "dependencies": [
+        "punycode"
       ]
     },
     "ts-interface-checker@0.1.13": {
@@ -1238,6 +1438,31 @@
     },
     "util-deprecate@1.0.2": {
       "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="
+    },
+    "w3c-xmlserializer@5.0.0": {
+      "integrity": "sha512-o8qghlI8NZHU1lLPrpi2+Uq7abh4GGPpYANlalzWxyWteJOCsr/P+oPBA49TOLu5FTZO4d3F9MnWJfiMo4BkmA==",
+      "dependencies": [
+        "xml-name-validator"
+      ]
+    },
+    "webidl-conversions@7.0.0": {
+      "integrity": "sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g=="
+    },
+    "whatwg-encoding@3.1.1": {
+      "integrity": "sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==",
+      "dependencies": [
+        "iconv-lite"
+      ]
+    },
+    "whatwg-mimetype@4.0.0": {
+      "integrity": "sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg=="
+    },
+    "whatwg-url@14.1.0": {
+      "integrity": "sha512-jlf/foYIKywAt3x/XWKZ/3rz8OSJPiWktjmk891alJUEjiVxKX9LEO92qH3hv4aJ0mN3MWPvGMCy8jQi95xK4w==",
+      "dependencies": [
+        "tr46",
+        "webidl-conversions"
+      ]
     },
     "which@2.0.2": {
       "integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
@@ -1261,9 +1486,73 @@
         "strip-ansi@7.1.0"
       ]
     },
+    "ws@8.18.0": {
+      "integrity": "sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw=="
+    },
+    "xml-name-validator@5.0.0": {
+      "integrity": "sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg=="
+    },
+    "xmlchars@2.2.0": {
+      "integrity": "sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw=="
+    },
     "yaml@2.7.0": {
       "integrity": "sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA=="
     }
+  },
+  "redirects": {
+    "https://esm.sh/@asamuzakjp/css-color@^2.8.2?target=denonext": "https://esm.sh/@asamuzakjp/css-color@2.8.3?target=denonext",
+    "https://esm.sh/@csstools/color-helpers@^5.0.2?target=denonext": "https://esm.sh/@csstools/color-helpers@5.0.2?target=denonext",
+    "https://esm.sh/@csstools/css-calc@^2.1.1?target=denonext": "https://esm.sh/@csstools/css-calc@2.1.2?target=denonext",
+    "https://esm.sh/@csstools/css-calc@^2.1.2?target=denonext": "https://esm.sh/@csstools/css-calc@2.1.2?target=denonext",
+    "https://esm.sh/@csstools/css-color-parser@^3.0.7?target=denonext": "https://esm.sh/@csstools/css-color-parser@3.0.8?target=denonext",
+    "https://esm.sh/@csstools/css-parser-algorithms@^3.0.4?target=denonext": "https://esm.sh/@csstools/css-parser-algorithms@3.0.4?target=denonext",
+    "https://esm.sh/@csstools/css-tokenizer@^3.0.3?target=denonext": "https://esm.sh/@csstools/css-tokenizer@3.0.3?target=denonext",
+    "https://esm.sh/agent-base@^7.1.0?target=denonext": "https://esm.sh/agent-base@7.1.3?target=denonext",
+    "https://esm.sh/agent-base@^7.1.2?target=denonext": "https://esm.sh/agent-base@7.1.3?target=denonext",
+    "https://esm.sh/asynckit@^0.4.0?target=denonext": "https://esm.sh/asynckit@0.4.0?target=denonext",
+    "https://esm.sh/bufferutil@^4.0.1?target=denonext": "https://esm.sh/bufferutil@4.0.9?target=denonext",
+    "https://esm.sh/build/Release/canvas.node?target=denonext": "https://esm.sh/build@0.1.4/Release/canvas.node?target=denonext",
+    "https://esm.sh/canvas@^3.0.0?target=denonext": "https://esm.sh/canvas@3.1.0?target=denonext",
+    "https://esm.sh/combined-stream@^1.0.8?target=denonext": "https://esm.sh/combined-stream@1.0.8?target=denonext",
+    "https://esm.sh/cssstyle@^4.2.1?target=denonext": "https://esm.sh/cssstyle@4.2.1?target=denonext",
+    "https://esm.sh/data-urls@^5.0.0?target=denonext": "https://esm.sh/data-urls@5.0.0?target=denonext",
+    "https://esm.sh/debug@4?target=denonext": "https://esm.sh/debug@4.4.0?target=denonext",
+    "https://esm.sh/debug@^4.3.4?target=denonext": "https://esm.sh/debug@4.4.0?target=denonext",
+    "https://esm.sh/decimal.js@^10.4.3?target=denonext": "https://esm.sh/decimal.js@10.5.0?target=denonext",
+    "https://esm.sh/delayed-stream@~1.0.0?target=denonext": "https://esm.sh/delayed-stream@1.0.0?target=denonext",
+    "https://esm.sh/entities@^4.5.0/lib/decode?target=denonext": "https://esm.sh/entities@4.5.0/lib/decode?target=denonext",
+    "https://esm.sh/entities@^4.5.0/lib/escape?target=denonext": "https://esm.sh/entities@4.5.0/lib/escape?target=denonext",
+    "https://esm.sh/form-data@^4.0.1?target=denonext": "https://esm.sh/form-data@4.0.2?target=denonext",
+    "https://esm.sh/html-encoding-sniffer@^4.0.0?target=denonext": "https://esm.sh/html-encoding-sniffer@4.0.0?target=denonext",
+    "https://esm.sh/http-proxy-agent@^7.0.2?target=denonext": "https://esm.sh/http-proxy-agent@7.0.2?target=denonext",
+    "https://esm.sh/https-proxy-agent@^7.0.6?target=denonext": "https://esm.sh/https-proxy-agent@7.0.6?target=denonext",
+    "https://esm.sh/is-potential-custom-element-name@^1.0.1?target=denonext": "https://esm.sh/is-potential-custom-element-name@1.0.1?target=denonext",
+    "https://esm.sh/jsdom": "https://esm.sh/jsdom@26.0.0",
+    "https://esm.sh/lru-cache@^10.4.3?target=denonext": "https://esm.sh/lru-cache@10.4.3?target=denonext",
+    "https://esm.sh/mime-types@^2.1.12?target=denonext": "https://esm.sh/mime-types@2.1.35?target=denonext",
+    "https://esm.sh/ms@^2.1.3?target=denonext": "https://esm.sh/ms@2.1.3?target=denonext",
+    "https://esm.sh/node-gyp-build@^4.3.0?target=denonext": "https://esm.sh/node-gyp-build@4.8.4?target=denonext",
+    "https://esm.sh/nwsapi@^2.2.16?target=denonext": "https://esm.sh/nwsapi@2.2.16?target=denonext",
+    "https://esm.sh/parse5@^7.2.1?target=denonext": "https://esm.sh/parse5@7.2.1?target=denonext",
+    "https://esm.sh/punycode@^2.3.1?target=denonext": "https://esm.sh/punycode@2.3.1?target=denonext",
+    "https://esm.sh/rrweb-cssom@^0.8.0?target=denonext": "https://esm.sh/rrweb-cssom@0.8.0?target=denonext",
+    "https://esm.sh/safer-buffer@^2.1.2?target=denonext": "https://esm.sh/safer-buffer@2.1.2?target=denonext",
+    "https://esm.sh/supports-color?target=denonext": "https://esm.sh/supports-color@10.0.0?target=denonext",
+    "https://esm.sh/symbol-tree@^3.2.4?target=denonext": "https://esm.sh/symbol-tree@3.2.4?target=denonext",
+    "https://esm.sh/tldts-core@^6.1.78?target=denonext": "https://esm.sh/tldts-core@6.1.78?target=denonext",
+    "https://esm.sh/tldts@^6.1.32?target=denonext": "https://esm.sh/tldts@6.1.78?target=denonext",
+    "https://esm.sh/tough-cookie@^5.0.0?target=denonext": "https://esm.sh/tough-cookie@5.1.1?target=denonext",
+    "https://esm.sh/tr46@^5.0.0?target=denonext": "https://esm.sh/tr46@5.0.0?target=denonext",
+    "https://esm.sh/utf-8-validate@%3E=5.0.2?target=denonext": "https://esm.sh/utf-8-validate@6.0.5?target=denonext",
+    "https://esm.sh/w3c-xmlserializer@^5.0.0?target=denonext": "https://esm.sh/w3c-xmlserializer@5.0.0?target=denonext",
+    "https://esm.sh/webidl-conversions@^7.0.0?target=denonext": "https://esm.sh/webidl-conversions@7.0.0?target=denonext",
+    "https://esm.sh/whatwg-encoding@^3.1.1?target=denonext": "https://esm.sh/whatwg-encoding@3.1.1?target=denonext",
+    "https://esm.sh/whatwg-mimetype@^4.0.0?target=denonext": "https://esm.sh/whatwg-mimetype@4.0.0?target=denonext",
+    "https://esm.sh/whatwg-url@^14.0.0?target=denonext": "https://esm.sh/whatwg-url@14.1.1?target=denonext",
+    "https://esm.sh/whatwg-url@^14.1.0/webidl2js-wrapper?target=denonext": "https://esm.sh/whatwg-url@14.1.1/webidl2js-wrapper?target=denonext",
+    "https://esm.sh/whatwg-url@^14.1.0?target=denonext": "https://esm.sh/whatwg-url@14.1.1?target=denonext",
+    "https://esm.sh/ws@^8.18.0?target=denonext": "https://esm.sh/ws@8.18.1?target=denonext",
+    "https://esm.sh/xml-name-validator@^5.0.0?target=denonext": "https://esm.sh/xml-name-validator@5.0.0?target=denonext"
   },
   "remote": {
     "https://deno.land/std@0.217.0/assert/_constants.ts": "a271e8ef5a573f1df8e822a6eb9d09df064ad66a4390f21b3e31f820a38e0975",
@@ -1297,13 +1586,112 @@
     "https://deno.land/std@0.217.0/assert/mod.ts": "325df8c0683ad83a873b9691aa66b812d6275fc9fec0b2d180ac68a2c5efed3b",
     "https://deno.land/std@0.217.0/assert/unimplemented.ts": "47ca67d1c6dc53abd0bd729b71a31e0825fc452dbcd4fde4ca06789d5644e7fd",
     "https://deno.land/std@0.217.0/assert/unreachable.ts": "38cfecb95d8b06906022d2f9474794fca4161a994f83354fd079cac9032b5145",
-    "https://deno.land/std@0.217.0/fmt/colors.ts": "d239d84620b921ea520125d778947881f62c50e78deef2657073840b8af9559a"
+    "https://deno.land/std@0.217.0/fmt/colors.ts": "d239d84620b921ea520125d778947881f62c50e78deef2657073840b8af9559a",
+    "https://esm.sh/@asamuzakjp/css-color@2.8.3/denonext/css-color.mjs": "7a5233ad13e6b3d9485e6bdc1b466096945ee007e6040b5a1d907667a9002a47",
+    "https://esm.sh/@asamuzakjp/css-color@2.8.3?target=denonext": "6c4b7d483a639c03a9df6724e1f5107093c7d2dc6a0800e535422634ec18b92f",
+    "https://esm.sh/@csstools/color-helpers@5.0.2/denonext/color-helpers.mjs": "b5bcfe2d5c1a60ea597426400be9e94475ba495fae757ffe97c1301cc00548f3",
+    "https://esm.sh/@csstools/color-helpers@5.0.2?target=denonext": "67d55662976c45563bd3fa6335360fa33944fd53dbb9b73dc3b6971d9476247f",
+    "https://esm.sh/@csstools/css-calc@2.1.2/denonext/css-calc.mjs": "5ffb4e2da4e44a4972f1208cbdc6221a9487d2dd4e42c35a877242d985196580",
+    "https://esm.sh/@csstools/css-calc@2.1.2?target=denonext": "aebec5718eb87d7da383c84a263bac358841e8a705bfee5fb49df8eb75d860dd",
+    "https://esm.sh/@csstools/css-color-parser@3.0.8/denonext/css-color-parser.mjs": "c9a6c99c82ffba5c2faca38fd483cea6865e50648a5b2e3eb315da10aff90a18",
+    "https://esm.sh/@csstools/css-color-parser@3.0.8?target=denonext": "6c7db550d810074c5807b26a2630286cdf5eabb30e4c3e9780958266d76d26b0",
+    "https://esm.sh/@csstools/css-parser-algorithms@3.0.4/denonext/css-parser-algorithms.mjs": "5736cb1a641f9292fa395e155b1012a74930d913f87c287782fd95f3d15aa468",
+    "https://esm.sh/@csstools/css-parser-algorithms@3.0.4?target=denonext": "f223bfed16b536c65b396c303c7f28f6ab8833f3f3efc938fac94db0721438c8",
+    "https://esm.sh/@csstools/css-tokenizer@3.0.3/denonext/css-tokenizer.mjs": "bd6d4f01c1f809fb060bf2d3f871e8362cfa237efc624bb979e9e732cac8490a",
+    "https://esm.sh/@csstools/css-tokenizer@3.0.3?target=denonext": "ed04501a1c3ee9e49da8dedf494690890405d6aaed849bef0e537f15026c86b6",
+    "https://esm.sh/agent-base@7.1.3/denonext/agent-base.mjs": "65d873bec0946614e2e33c0c3c1c958ee346695facfdeb51e2dda348e700bd57",
+    "https://esm.sh/agent-base@7.1.3?target=denonext": "c76a77281d852899060a3ecf8bed33525c5f252f53dfac18e2f0ae5957b22910",
+    "https://esm.sh/asynckit@0.4.0/denonext/asynckit.mjs": "4ef3be6eb52c104699b90ca5524db55ec15bc76b361432f05c16b6106279ba72",
+    "https://esm.sh/asynckit@0.4.0?target=denonext": "c6bd8832d6d16b648e22d124a16d33c3a7f7076e92be9444f2e4f6b27545708d",
+    "https://esm.sh/bufferutil@4.0.9/denonext/bufferutil.mjs": "13dca4d5bb2c68cbe119f880fa3bd785b9a81a8e02e0834dae604b4b85295cd8",
+    "https://esm.sh/bufferutil@4.0.9?target=denonext": "e32574569ab438facfcc3f412c659b0719bbf05477136ca176938c9a3ac45125",
+    "https://esm.sh/canvas@3.1.0/denonext/canvas.mjs": "a1d96a51177d4260fdb7137202eb5d44ed32fc5acaf2aec5a11e6e48883d1a18",
+    "https://esm.sh/canvas@3.1.0?target=denonext": "6dbba5ebe918d943aff4ad57eced932791d1589bf982b3da4733ec0ca6ea36c4",
+    "https://esm.sh/combined-stream@1.0.8/denonext/combined-stream.mjs": "364b91aa4c33e5f0b4075949d93a3407b21a8695031e7c2be29999d588f9ca2c",
+    "https://esm.sh/combined-stream@1.0.8?target=denonext": "a0c89b8b29494e966774c7a708e33cc2df16a0bbe2279c841d088e169e7ab3c4",
+    "https://esm.sh/cssstyle@4.2.1/denonext/cssstyle.mjs": "ddcb1b18289676e24aed1c8ded38e08fbfa9aee0c23d2355d0d51f203b86faac",
+    "https://esm.sh/cssstyle@4.2.1?target=denonext": "1bba62c36b298301c5b2d2e456d3a1bbf1051553fcb87be226a51405f13ae478",
+    "https://esm.sh/data-urls@5.0.0/denonext/data-urls.mjs": "25b6809e8f13037adaa1426a551c35e41a4edaeb60bf449774f95a6548d7e7cc",
+    "https://esm.sh/data-urls@5.0.0?target=denonext": "9c793f0b7495861bb9721fe6956a441328c93c70e0159e2aba56fd54385cadf4",
+    "https://esm.sh/debug@4.4.0/denonext/debug.mjs": "3077d1ff15cfc5b7baee65b0c00b3200aef8ab51ddddfa960972957c347c1cee",
+    "https://esm.sh/debug@4.4.0?target=denonext": "dc29873ca5518385fcbddb2b2fa0f3b31dc6463ba52bdd790818683b9dbdc6ad",
+    "https://esm.sh/decimal.js@10.5.0/denonext/decimal.mjs": "958b9827f12bfe9752deadc0b76f7a79ccd7c94b70388a3a8f4005fe023a3592",
+    "https://esm.sh/decimal.js@10.5.0?target=denonext": "ac57e1f152b442d51f0f969336432b1af09d8ef189eb47fc5433a317fa603780",
+    "https://esm.sh/delayed-stream@1.0.0/denonext/delayed-stream.mjs": "051a3501b7b3d3c593b78a2c7305093a8e363c518cd156f1a77117185e312abe",
+    "https://esm.sh/delayed-stream@1.0.0?target=denonext": "d363b81e01f4c886114df14aa660c1a938bbb4be851ff12132260bed0db6126e",
+    "https://esm.sh/entities@4.5.0/denonext/lib/decode.mjs": "ef22e25f6bca668e40c4f7d4ecaebe2172a833a18372d55b54f997d0d8702dcd",
+    "https://esm.sh/entities@4.5.0/denonext/lib/escape.mjs": "116aef78e5ff05efa6f79851b8b59da025ab88f5c25d2262f73df98f4d57c3fa",
+    "https://esm.sh/entities@4.5.0/lib/decode?target=denonext": "488bc8401a0c85a76527d61a41352c5371904aeda57a136eb10ccfadcd2f7c8c",
+    "https://esm.sh/entities@4.5.0/lib/escape?target=denonext": "5a9169bd35526d3a3740b3d4aaed9a4ac0b43eecaa456252a379dabb5074a0ef",
+    "https://esm.sh/form-data@4.0.2/denonext/form-data.mjs": "ad3c492eef1c6153bcfa02eb3041894e8bc8e4aa241ad4d9bd53a385f36d2c6f",
+    "https://esm.sh/form-data@4.0.2?target=denonext": "83cf111a2e6f0f7b6c045508635ceae449c5d43d8d22df23693e5b996cc65899",
+    "https://esm.sh/html-encoding-sniffer@4.0.0/denonext/html-encoding-sniffer.mjs": "7ddb6dc2201652cb21f0ef05cf26123e73fada571849ac98bd9c7f005c3f4f31",
+    "https://esm.sh/html-encoding-sniffer@4.0.0?target=denonext": "d096f813febda0c56a0c54fa5aa1989383fe1923c94150e5b4cdcfa02187f301",
+    "https://esm.sh/http-proxy-agent@7.0.2/denonext/http-proxy-agent.mjs": "1556b1f1ed4065b42820b9557da226cef428a34529593982ab0dda56b9cee3cf",
+    "https://esm.sh/http-proxy-agent@7.0.2?target=denonext": "1c3557e656d2df5ab36e25c827cf0ec6f12502fb3273def69c0fde08c84b22d4",
+    "https://esm.sh/https-proxy-agent@7.0.6/denonext/https-proxy-agent.mjs": "37b0793e160738a4ae695ea567218fb5ad39c458c33ebd5857f06deb3605ffec",
+    "https://esm.sh/https-proxy-agent@7.0.6?target=denonext": "cd42ba7e40cb2f053a2151f66585c0c338818807c0d7208e23a8302c15659b23",
+    "https://esm.sh/iconv-lite@0.6.3/denonext/iconv-lite.mjs": "58314c9a1d16db741c1edb519849067c19f931ea0331a2e3ad5c02b1dcf2f82a",
+    "https://esm.sh/is-potential-custom-element-name@1.0.1/denonext/is-potential-custom-element-name.mjs": "ced6030c333d173179c2a00a27397f71ed68725be65e78be74f2c6c61dea18cd",
+    "https://esm.sh/is-potential-custom-element-name@1.0.1?target=denonext": "78374c1d74ce1440683f94d22341ba09b796b2a86ece0ab387708b66fbd007ce",
+    "https://esm.sh/jsdom@26.0.0": "5d93aa96802b3aac5842fac2aa72556676e1692d1d7302ed59d2d204700cdd50",
+    "https://esm.sh/jsdom@26.0.0/denonext/jsdom.mjs": "5e6d3ab5e7011b57dc3232f8f83b893db1237f76ef563def07b0862a47b9841c",
+    "https://esm.sh/lru-cache@10.4.3/denonext/lru-cache.mjs": "ba5ee5ff9067a3a33de530b47c0ce7e81cdff92937e5519258ed422b7e23fbdb",
+    "https://esm.sh/lru-cache@10.4.3?target=denonext": "e0a3f66d0dbb61c67fbec24fb29ba1b18e21dab43178cfba399481560e076382",
+    "https://esm.sh/mime-db@1.52.0/denonext/mime-db.mjs": "f93feb3d7150014b71bd0d06c5bd819db56a089b31b8b79a3b0466bb37ef005e",
+    "https://esm.sh/mime-types@2.1.35/denonext/mime-types.mjs": "704bdb318816fe1360c90a196f7cb3ba6e25fe207707cc2df873f890ad2e5f44",
+    "https://esm.sh/mime-types@2.1.35?target=denonext": "e4cc9a1aabecc1be22d194375ec3b99cc9d51700cc4629ab689975451c0a8ce5",
+    "https://esm.sh/ms@2.1.3/denonext/ms.mjs": "9039464da1f4ae1c2042742d335c82556c048bbe49449b5d0cd5198193afa147",
+    "https://esm.sh/ms@2.1.3?target=denonext": "36f5aa7503ff0ff44ce9e3155a60362d8d3ae5db8db048be5764a3a515b6a263",
+    "https://esm.sh/node-gyp-build@4.8.4/denonext/node-gyp-build.mjs": "9a86f2d044fc77bd60aaa3d697c2ba1b818da5fb1b9aaeedec59a40b8e908803",
+    "https://esm.sh/node-gyp-build@4.8.4?target=denonext": "261a6cedf1fdbf159798141ba1e2311ac1510682c5c8b55dacc8cf5fdee4aa06",
+    "https://esm.sh/nwsapi@2.2.16/denonext/nwsapi.mjs": "13708efb0b4cfa745d3247d0578042444962d3fd792d469388bdcd9c98069e91",
+    "https://esm.sh/nwsapi@2.2.16?target=denonext": "af138d24085d25f7378b59f95327d2b9ec66274bdff4df65d1a001d0fb825df6",
+    "https://esm.sh/parse5@7.2.1/denonext/parse5.mjs": "de52f4e91aa9b18afc13befa7cff696c46a0e339510fc48f1f120720330c7a6e",
+    "https://esm.sh/parse5@7.2.1?target=denonext": "830ccab36e4cdce029bbc48d458800f77854076a78c44696a005cb1fd3bc81a9",
+    "https://esm.sh/punycode@2.3.1/denonext/punycode.mjs": "5d108000c361561f4ddedc3f201df2a40a0b251c4d94df75ecc959e5ffcc99ac",
+    "https://esm.sh/punycode@2.3.1?target=denonext": "5b74b6114721e33c740cf6aeafd96838523b5cd9ff3ca71855726bfc8d48d7e3",
+    "https://esm.sh/rrweb-cssom@0.8.0/denonext/rrweb-cssom.mjs": "f610b63ab54323b433430b132329d9b921cb2c007c0529210349f40d6b07e985",
+    "https://esm.sh/rrweb-cssom@0.8.0?target=denonext": "d41fd8fa9368efbb84c06d1b955068a2a6dfae71c2c7bbf9cda0523bd64e9fe0",
+    "https://esm.sh/safer-buffer@2.1.2/denonext/safer-buffer.mjs": "63b601ca3ed03a32349ca04538ac898f2c520dbc6b554246d11c482c31e8a6b8",
+    "https://esm.sh/safer-buffer@2.1.2?target=denonext": "381ed15e73b07affd71d58c070213d027e4b8951c381f44e5f80589d3ea9957b",
+    "https://esm.sh/supports-color@10.0.0/denonext/supports-color.mjs": "239cd39d0828e1a018dee102748da869b1b75c38fe6a9c0c8f0bd4ffbd3e1ea1",
+    "https://esm.sh/supports-color@10.0.0?target=denonext": "4895255248e4ba0cbcce9437003dccf3658b1ac1d1e8eba5225fb8194c454ee1",
+    "https://esm.sh/symbol-tree@3.2.4/denonext/symbol-tree.mjs": "4b03e097480f40b035abeca19562b99968adbd551caeee93672d1a22bb5e0776",
+    "https://esm.sh/symbol-tree@3.2.4?target=denonext": "22b3ce01dc83f3e9ec2a07ea3a01f56532202e91a2f7a956dc494c7f01f51a09",
+    "https://esm.sh/tldts-core@6.1.78/denonext/tldts-core.mjs": "1feec2875d351be716bee9211c2de0c793d87007fd818ab0dda3b56ad25adc0c",
+    "https://esm.sh/tldts-core@6.1.78?target=denonext": "c24fc9bd3a4dd4805420270e8ab92627805631b2f846105cac67d8b28f9ac87f",
+    "https://esm.sh/tldts@6.1.78/denonext/tldts.mjs": "3977935806f134d3a2793d633240a2edacae2288faa75521da0ede0076934c88",
+    "https://esm.sh/tldts@6.1.78?target=denonext": "7e0238ee452ca8d8685c060ca9f0dc2bde3168ee7fcb660b45e1f6b56bee839a",
+    "https://esm.sh/tough-cookie@5.1.1/denonext/tough-cookie.mjs": "c6367e9e237a802cd20efc47ba30c60173b5af3194c3a0efed8ea0753ae130ab",
+    "https://esm.sh/tough-cookie@5.1.1?target=denonext": "8f730e64de7f2fdd4ce28ef9bc7b44e399ddf890eab2d105d452585123bc8d82",
+    "https://esm.sh/tr46@5.0.0/denonext/tr46.mjs": "cea8d86ce5856f42b4f23cfc751a5cc13b1385cd2bab191d21670b9a98a0815f",
+    "https://esm.sh/tr46@5.0.0?target=denonext": "68b051db3d29fd25d6b60e6335f28bfcfb7ec6134d4a1615ba8a3907663b4836",
+    "https://esm.sh/utf-8-validate@6.0.5/denonext/utf-8-validate.mjs": "66b8ea532a0c745068f5b96ddb1bae332c3036703243541d2e89e66331974d98",
+    "https://esm.sh/utf-8-validate@6.0.5?target=denonext": "071bc33ba1a58297e23a34d69dd589fd06df04b0f373b382ff5da544a623f271",
+    "https://esm.sh/w3c-xmlserializer@5.0.0/denonext/w3c-xmlserializer.mjs": "122e3e552454f1752e443fdf80f4c8ca36109208fb05943d39fc64a5e85499de",
+    "https://esm.sh/w3c-xmlserializer@5.0.0?target=denonext": "078e017f6cb607175c9246ebd38041912488fc813100625bf7502cf47dfe7c7f",
+    "https://esm.sh/webidl-conversions@7.0.0/denonext/webidl-conversions.mjs": "ba51539722c56b6c41341c14ba249f7bf8acd7f132ae1b8d9c0a81cc17360abc",
+    "https://esm.sh/webidl-conversions@7.0.0?target=denonext": "d4b1e1e5302669677ad8274d9c0f0ba59c50e9ab8c3215a3774f3aa206963bd5",
+    "https://esm.sh/whatwg-encoding@3.1.1/denonext/whatwg-encoding.mjs": "771c409a89b301144c200fe8520bce25a72b9108068a5a57e21b76670549bccb",
+    "https://esm.sh/whatwg-encoding@3.1.1?target=denonext": "0e24061fe35afd2b2c93625e4288c643837ae8d491abf572a067b55ecce45c1f",
+    "https://esm.sh/whatwg-mimetype@4.0.0/denonext/whatwg-mimetype.mjs": "077315581483d77f815ed7e227ea4bf7ffdda61b211b471053c4bca423a7fd54",
+    "https://esm.sh/whatwg-mimetype@4.0.0?target=denonext": "a0a0b4ee5d006be602d7e01eee5347c950d89662d502d72db5ba6daa60e92a3d",
+    "https://esm.sh/whatwg-url@14.1.1/denonext/webidl2js-wrapper.mjs": "b3ea2c43f3ab1ec4940b6b1cdf9b831cecac4e955694cbc1d011895a0299464c",
+    "https://esm.sh/whatwg-url@14.1.1/denonext/whatwg-url.mjs": "61eed4db49211766b701af194c71a8bfad2877bd7b1c07163c76f18a788870c8",
+    "https://esm.sh/whatwg-url@14.1.1/webidl2js-wrapper?target=denonext": "57c19b6b836f3774ef612b667e1fc01200bf145d3487f3d7860c686044add5b6",
+    "https://esm.sh/whatwg-url@14.1.1?target=denonext": "2394c3b7ffef3aa8855fbd0e98fd30f1677fb79b9a9e59e9f694e05335407b2e",
+    "https://esm.sh/ws@8.18.1/denonext/ws.mjs": "732cae76ba0acb311a561003d2f7ef569293cb9159d67dd800ab346b84f80432",
+    "https://esm.sh/ws@8.18.1?target=denonext": "e99b670fc49b38e15a7576ddcd5bb01e123fe9b3a017db7f97898127811b4e27",
+    "https://esm.sh/xml-name-validator@5.0.0/denonext/xml-name-validator.mjs": "d6efa1d81da5e2e5dc725b5c6a7537e4d3729f4b0ba1364c8151be74d7dda168",
+    "https://esm.sh/xml-name-validator@5.0.0?target=denonext": "5387f3c1042cdac99adc6c11b669da12fd30838e49ec27d63110bf8e370bdfce"
   },
   "workspace": {
     "dependencies": [
       "jsr:@fresh/core@^2.0.0-alpha.29",
       "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
       "npm:@preact/signals@^2.0.1",
+      "npm:jsdom@26",
       "npm:preact@^10.25.4",
       "npm:tailwindcss@^3.4.3"
     ],
