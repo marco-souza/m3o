@@ -22,8 +22,6 @@ jobs:
 
       - name: Install Deno
         uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
 
       - name: Build step
         run: "deno task build"
