@@ -6,7 +6,7 @@
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update ."
   },
-  "workspace": ["./packages/*"],
+  "workspace": ["packages/errors", "packages/auth"],
   "lint": {
     "rules": {
       "tags": [
