@@ -20,6 +20,7 @@
   ],
   "imports": {
     "#/": "./",
+    "ethers": "npm:ethers@^6.13.5",
     "fresh": "jsr:@fresh/core@^2.0.0-alpha.29",
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
     "jsdom": "npm:jsdom@^26.0.0",

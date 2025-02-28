@@ -3,6 +3,7 @@ import { define } from "#/utils.ts";
 import Counter from "#/islands/Counter.tsx";
 
 import { t } from "#/contants.tsx";
+import AuthWeb3, { ClientSide } from "#/islands/AuthWeb3.tsx";
 
 export default define.page(function Home() {
   const count = useSignal(3);
@@ -26,6 +27,10 @@ export default define.page(function Home() {
         </p>
 
         <Counter count={count} />
+
+        <ClientSide>
+          <AuthWeb3 />
+        </ClientSide>
       </div>
     </div>
   );
