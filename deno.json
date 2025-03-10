@@ -7,17 +7,8 @@
     "update": "deno run -A -r jsr:@fresh/update ."
   },
   "workspace": ["packages/errors", "packages/auth"],
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "exclude": ["**/_fresh/*"],
   "imports": {
     "#/": "./",
     "ethers": "npm:ethers@^6.13.5",
@@ -29,21 +20,9 @@
     "tailwindcss": "npm:tailwindcss@^3.4.3"
   },
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.asynciterable",
-      "dom.iterable",
-      "deno.ns"
-    ],
+    "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
     "jsx": "precompile",
     "jsxImportSource": "preact",
-    "jsxPrecompileSkipElements": [
-      "a",
-      "img",
-      "source",
-      "body",
-      "html",
-      "head"
-    ]
+    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
   }
 }
