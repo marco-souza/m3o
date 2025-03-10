@@ -1,14 +1,12 @@
 import { ethers } from "ethers";
 
 declare global {
-  interface Window {
-    ethereum: ethers.Eip1193Provider;
-  }
+  var ethereum: ethers.Eip1193Provider;
 }
 
 export const metamask = {
   getEth() {
-    const eth = window.ethereum;
+    const eth = globalThis.ethereum;
     if (!eth) {
       throw new Error("No ethereum provider found");
     }
@@ -27,7 +25,7 @@ export const metamask = {
   },
 
   isMetaMaskInstalled() {
-    return Boolean(window.ethereum);
+    return Boolean(globalThis.ethereum);
   },
 
   async isAuthorized() {
@@ -42,4 +40,3 @@ export const metamask = {
     return accounts;
   },
 };
-
