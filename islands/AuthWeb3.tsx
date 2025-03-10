@@ -1,7 +1,6 @@
 import { metamask } from "#/lib/ethers.ts";
-import { IS_BROWSER } from "fresh/runtime";
-import { useEffect, useState } from "preact/hooks";
-import { FunctionalComponent } from "preact";
+import { useState } from "preact/hooks";
+import { useEffectOnce } from "#/lib/client.tsx";
 
 export default function AuthWeb3() {
   const [account] = useAccounts();
@@ -29,24 +28,14 @@ export default function AuthWeb3() {
 }
 
 function useAccounts() {
-  const [accounts, setAcconts] = useState([]);
+  const [accounts, setAcconts] = useState<string[]>([]);
 
-  useEffect(() => {
-    metamask.getAccounts().then((acc) => {
+  useEffectOnce(() => {
+    metamask.getAccounts().then((acc: string[]) => {
       console.log({ acc });
-      setAcconts(acc as any as string[]);
+      setAcconts(acc);
     });
-  }, []);
+  });
 
   return accounts;
-}
-
-export function ClientSide({ children }: { children: FunctionalComponent }) {
-  const [isBrowser, setIsBrowser] = useState(IS_BROWSER);
-
-  useEffect(() => {
-    setIsBrowser(IS_BROWSER);
-  }, []);
-
-  return isBrowser ? children : null;
 }
