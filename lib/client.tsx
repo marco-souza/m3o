@@ -1,10 +1,10 @@
 import { IS_BROWSER } from "fresh/runtime";
-import { FunctionalComponent } from "preact";
 import { useEffect, useState } from "preact/hooks";
+import { VNode } from "preact";
 
 export type ClientSideProps = {
-  children: FunctionalComponent;
-  fallback?: FunctionalComponent;
+  children: VNode;
+  fallback?: VNode;
 };
 
 export function useEffectOnce(cb: () => void) {
