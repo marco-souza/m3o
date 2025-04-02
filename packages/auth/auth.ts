@@ -156,3 +156,5 @@ export class GitHubAuth {
     return true;
   }
 }
+
+export * from "./types.ts";
