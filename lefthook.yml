@@ -9,6 +9,11 @@ pre-commit:
     gofmt:
       glob: "*.go"
       run: gofmt -w {staged_files}
+
+    templ-fmt:
+      glob: "*.templ"
+      run: templ fmt {staged_files}
+
     prettier:
-      glob: "*.md"
+      glob: "*.{md,js,yaml,yml}"
       run: npx prettier --write {staged_files}

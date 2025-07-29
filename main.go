@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"net/http"
 	"os"
 
 	"github.com/marco-souza/m3o/ui"
@@ -22,20 +21,12 @@ func main() {
 
 	// add a /hello endpoint that returns "Hello world!"
 	app.OnServe().BindFunc(func(se *core.ServeEvent) error {
-		// serves static files from the provided public dir (if exists)
-		se.Router.GET("/{path...}", apis.Static(os.DirFS("./pb_public"), false))
-
-		se.Router.GET("/hello", func(e *core.RequestEvent) error {
-			return e.String(http.StatusOK, "Hello world!")
-		})
-
-		se.Router.GET("/templ", func(e *core.RequestEvent) error {
-			// e.ResponseWriter is an http.ResponseWriter
-			// e.Request is an *http.Request
-			component := ui.Hello("World from server")
-
+		se.Router.GET("/", func(e *core.RequestEvent) error {
+			component := ui.HomeLayout("World from server")
 			return component.Render(e.Request.Context(), e.Response)
 		})
+
+		se.Router.GET("/static/{path...}", apis.Static(os.DirFS("./pb_public"), false))
 
 		return se.Next()
 	})

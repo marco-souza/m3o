@@ -1,0 +1,43 @@
+package ui
+
+templ HomeLayout(name string) {
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<title>
+				Welcome to DaisyUI
+			</title>
+			<link href="/static/css/styles.min.css" rel="stylesheet"/>
+			<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+			<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+		</head>
+		<body class="bg-base-200 min-h-screen flex flex-col justify-between">
+			<div class="navbar bg-base-100 shadow-lg">
+				<div class="flex-1">
+					<a class="btn btn-ghost normal-case text-xl">MyApp</a>
+				</div>
+				<div class="flex-none">
+					<button class="btn btn-primary" data-on-click="alert('You will be redirect to the login page')">Login</button>
+				</div>
+			</div>
+			<div class="hero bg-base-200">
+				<div class="hero-content text-center">
+					<div class="max-w-md">
+						<h1 class="text-5xl font-bold">Hello, DaisyUI!</h1>
+						<p class="py-6">This is a beautiful DaisyUI page created with Tailwind CSS and DaisyUI components.</p>
+						<button class="btn btn-primary" data-on-click="console.log('Clicking on Get Stated')">Get Started</button>
+					</div>
+				</div>
+			</div>
+			<footer class="footer items-center p-4 bg-neutral text-neutral-content">
+				<div class="items-center grid-flow-col">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M9 6l-7 7 7-7z"></path></svg>
+					<p>Copyright © 2025 - All right reserved</p>
+				</div>
+			</footer>
+			<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+			<script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js"></script>
+		</body>
+	</html>
+}
