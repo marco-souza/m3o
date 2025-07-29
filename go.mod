@@ -3,6 +3,12 @@ module github.com/marco-souza/m3o.sh
 go 1.24.4
 
 require (
+	github.com/a-h/templ v0.3.924
+	github.com/pocketbase/pocketbase v0.29.0
+	github.com/spf13/cobra v1.9.1
+)
+
+require (
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
 	github.com/domodwyer/mailyak/v3 v3.6.2 // indirect
@@ -18,10 +24,8 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/ncruces/go-strftime v0.1.9 // indirect
 	github.com/pocketbase/dbx v1.11.0 // indirect
-	github.com/pocketbase/pocketbase v0.29.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/spf13/cast v1.9.2 // indirect
-	github.com/spf13/cobra v1.9.1 // indirect
 	github.com/spf13/pflag v1.0.7 // indirect
 	golang.org/x/crypto v0.40.0 // indirect
 	golang.org/x/exp v0.0.0-20250718183923-645b1fa84792 // indirect

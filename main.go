@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/marco-souza/m3o.sh/ui"
 	"github.com/pocketbase/pocketbase"
 	"github.com/pocketbase/pocketbase/apis"
 	"github.com/pocketbase/pocketbase/core"
@@ -28,6 +29,14 @@ func main() {
 			return e.String(http.StatusOK, "Hello world!")
 		})
 
+		se.Router.GET("/templ", func(e *core.RequestEvent) error {
+			// e.ResponseWriter is an http.ResponseWriter
+			// e.Request is an *http.Request
+			component := ui.Hello("World from server")
+
+			return component.Render(e.Request.Context(), e.Response)
+		})
+
 		return se.Next()
 	})
 
@@ -35,7 +44,7 @@ func main() {
 	app.RootCmd.AddCommand(&cobra.Command{
 		Use: "hello",
 		Run: func(cmd *cobra.Command, args []string) {
-			print("Hello from CLI") 
+			print("Hello from CLI")
 		},
 	})
 
