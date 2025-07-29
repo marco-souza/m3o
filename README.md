@@ -1,10 +1,10 @@
-# m3o.sh
+# m3o
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/marco-souza/m3o.sh)](https://golang.org/)
-[![License](https://img.shields.io/github/license/marco-souza/m3o.sh)](LICENSE)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/marco-souza/m3o)](https://golang.org/)
+[![License](https://img.shields.io/github/license/marco-souza/m3o)](LICENSE)
 [![Powered by PocketBase](https://img.shields.io/badge/powered%20by-PocketBase-blue.svg)](https://pocketbase.io/)
 
-This is a [PocketBase](https://pocketbase.io/) project called `m3o.sh`.
+This is a [PocketBase](https://pocketbase.io/) project called `m3o`.
 
 ## Features
 
@@ -26,8 +26,8 @@ This is a [PocketBase](https://pocketbase.io/) project called `m3o.sh`.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/marco-souza/m3o.sh.git
-    cd m3o.sh
+    git clone https://github.com/marco-souza/m3o.git
+    cd m3o
     ```
 
 2.  **Install dependencies:**
@@ -47,13 +47,13 @@ This is a [PocketBase](https://pocketbase.io/) project called `m3o.sh`.
 1.  **Build the Docker image:**
 
     ```bash
-    docker build -t m3o.sh .
+    docker build -t m3o .
     ```
 
 2.  **Run the Docker container:**
 
     ```bash
-    docker run -p 8080:8080 m3o.sh
+    docker run -p 8080:8080 m3o
     ```
 
 ## Usage

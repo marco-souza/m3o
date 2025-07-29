@@ -6,7 +6,7 @@ This document provides context for the Gemini agent to understand and interact w
 
 This is a Go project that uses the [PocketBase](https://pocketbase.io/) framework. PocketBase is an open-source Go backend that provides a realtime database, authentication, file storage, and an admin dashboard in a single executable.
 
-The project is named `m3o.sh` and is configured with:
+The project is named `m3o` and is configured with:
 
 - A custom API endpoint at `/hello`.
 - A custom CLI command `hello`.
@@ -46,8 +46,8 @@ This is suitable for production or containerized environments.
 
 - **Build and run with Docker:**
   ```bash
-  docker build -t m3o.sh .
-  docker run -p 8090:8090 m3o.sh
+  docker build -t m3o .
+  docker run -p 8090:8090 m3o
   ```
 - **Run with Docker Compose:**
   ```bash

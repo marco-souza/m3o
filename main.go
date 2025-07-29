@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/marco-souza/m3o.sh/ui"
+	"github.com/marco-souza/m3o/ui"
 	"github.com/pocketbase/pocketbase"
 	"github.com/pocketbase/pocketbase/apis"
 	"github.com/pocketbase/pocketbase/core"

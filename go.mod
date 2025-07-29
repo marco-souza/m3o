@@ -1,4 +1,4 @@
-module github.com/marco-souza/m3o.sh
+module github.com/marco-souza/m3o
 
 go 1.24.4
 
