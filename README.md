@@ -8,18 +8,18 @@ This is a [PocketBase](https://pocketbase.io/) project called `m3o.sh`.
 
 ## Features
 
-*   **PocketBase Backend**: A complete backend in a single file.
-*   **Custom `/hello` Endpoint**: A simple endpoint that returns "Hello world!".
-*   **Custom `hello` CLI Command**: A command that prints "Hello from CLI".
-*   **Cron Job**: A cron job that prints "Hello!" every 2 minutes.
-*   **Static File Serving**: Serves static files from the `pb_public` directory.
+- **PocketBase Backend**: A complete backend in a single file.
+- **Custom `/hello` Endpoint**: A simple endpoint that returns "Hello world!".
+- **Custom `hello` CLI Command**: A command that prints "Hello from CLI".
+- **Cron Job**: A cron job that prints "Hello!" every 2 minutes.
+- **Static File Serving**: Serves static files from the `pb_public` directory.
 
 ## Getting Started
 
 ### Prerequisites
 
-*   [Go](https://golang.org/doc/install)
-*   [Docker](https://docs.docker.com/get-docker/) (optional)
+- [Go](https://golang.org/doc/install)
+- [Docker](https://docs.docker.com/get-docker/) (optional)
 
 ### Running with Go
 
@@ -58,5 +58,36 @@ This is a [PocketBase](https://pocketbase.io/) project called `m3o.sh`.
 
 ## Usage
 
-*   **API Endpoint**: Access the `/hello` endpoint at `http://localhost:8080/hello`.
-*   **CLI Command**: Run the `hello` command with `go run main.go hello`.
+- **API Endpoint**: Access the `/hello` endpoint at `http://localhost:8080/hello`.
+- **CLI Command**: Run the `hello` command with `go run main.go hello`.
+
+## Stack
+
+This project uses:
+
+- **Go**: The primary programming language.
+- **PocketBase**: As the backend framework.
+- **Node.js**: For dependency management and running scripts.
+- **Lefthook**: For git hooks management.
+- **Prettier**: To format markdown files.
+
+## Development
+
+To contribute to this project, you need to have the following installed:
+
+- [Go](https://golang.org/doc/install)
+- [Node.js](https://nodejs.org/en/download/) (which includes `npx`)
+
+To ensure code quality and consistency, this project uses [Lefthook](https://github.com/evilmartians/lefthook) to manage git hooks.
+
+To get started, install our dependencies:
+
+```bash
+go install github.com/evilmartians/lefthook@latest
+```
+
+Then, install the git hooks:
+
+```bash
+lefthook install
+```
