@@ -1,0 +1,11 @@
+services:
+  m3o:
+    build: .
+    command: air serve --http 0.0.0.0:8090
+    ports:
+      - "8090:8090"
+    volumes:
+      - .:/app
+      - ./pb_data:/app/pb_data
+    environment:
+      - CGO_ENABLED=0
