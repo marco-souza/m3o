@@ -1,16 +1,29 @@
 package ui
 
-templ HomeLayout(name string) {
+templ ogMetaTag(title, description string) {
+	<meta property="og:title" content={ title }/>
+	<meta property="og:description" contenteditable={ description }/>
+	<meta property="og:image" content="/favicon.ico"/>
+	<meta property="og:url" content="https://example.com"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+}
+
+templ HomeLayout(title, description string, content templ.Component) {
 	<html lang="en">
 		<head>
+			<!-- page setup -->
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<title>
-				Welcome to DaisyUI
-			</title>
-			<link href="/static/css/styles.min.css" rel="stylesheet"/>
-			<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
-			<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+			<meta name="theme-color" content="#f0f0f0"/>
+			@ogMetaTag(title, description)
+			<!-- descriptions -->
+			<title>{ title } </title>
+			<meta name="description" content={ description }/>
+			<meta name="keywords" content="Golang, Pocketbase, DaisyUI, Tailwind CSS, UI components, web design, frontend development"/>
+			<link rel="icon" type="image/x-icon" href="/static/favicon.ico"/>
+			<!-- styles -->
+			<link rel="preload" href="/static/css/styles.min.css" as="style" onload="this.rel='stylesheet'"/>
+			<link rel="preload" href="/static/css/daisyui@5.css" as="style" onload="this.rel='stylesheet'"/>
 		</head>
 		<body class="bg-base-200 min-h-screen flex flex-col justify-between">
 			<div class="navbar bg-base-100 shadow-lg">
@@ -21,15 +34,7 @@ templ HomeLayout(name string) {
 					<button class="btn btn-primary" data-on-click="alert('You will be redirect to the login page')">Login</button>
 				</div>
 			</div>
-			<div class="hero bg-base-200">
-				<div class="hero-content text-center">
-					<div class="max-w-md">
-						<h1 class="text-5xl font-bold">Hello, DaisyUI!</h1>
-						<p class="py-6">This is a beautiful DaisyUI page created with Tailwind CSS and DaisyUI components.</p>
-						<button class="btn btn-primary" data-on-click="console.log('Clicking on Get Stated')">Get Started</button>
-					</div>
-				</div>
-			</div>
+			@content
 			<footer class="footer items-center p-4 bg-neutral text-neutral-content">
 				<div class="items-center grid-flow-col">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M9 6l-7 7 7-7z"></path></svg>
@@ -40,4 +45,24 @@ templ HomeLayout(name string) {
 			<script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js"></script>
 		</body>
 	</html>
+}
+
+templ HomeHero() {
+	<div class="hero bg-base-200">
+		<div class="hero-content text-center">
+			<div class="max-w-md">
+				<h1 class="text-5xl font-bold">Hello, DaisyUI!</h1>
+				<p class="py-6">This is a beautiful DaisyUI page created with Tailwind CSS and DaisyUI components.</p>
+				<button class="btn btn-primary" data-on-click="console.log('Clicking on Get Stated')">Get Started</button>
+			</div>
+		</div>
+	</div>
+}
+
+templ ErrorPage(status int, message string) {
+	<div class="text-center">
+		<h1 class="text-6xl font-bold text-error">{ status }</h1>
+		<p class="mt-4 text-lg">{ message }</p>
+		<a href="/" class="btn btn-primary mt-6">Go Home</a>
+	</div>
 }

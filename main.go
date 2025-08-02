@@ -2,12 +2,9 @@ package main
 
 import (
 	"log"
-	"os"
 
-	"github.com/marco-souza/m3o/ui"
+	"github.com/marco-souza/m3o/internal/server"
 	"github.com/pocketbase/pocketbase"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
 	"github.com/spf13/cobra"
 )
 
@@ -19,17 +16,7 @@ func main() {
 		log.Println("Hello from cron!")
 	})
 
-	// add a /hello endpoint that returns "Hello world!"
-	app.OnServe().BindFunc(func(se *core.ServeEvent) error {
-		se.Router.GET("/", func(e *core.RequestEvent) error {
-			component := ui.HomeLayout("World from server")
-			return component.Render(e.Request.Context(), e.Response)
-		})
-
-		se.Router.GET("/static/{path...}", apis.Static(os.DirFS("./pb_public"), false))
-
-		return se.Next()
-	})
+	app.OnServe().BindFunc(server.DefineRoutes)
 
 	// add a CLI command that prints "Hello world!"
 	app.RootCmd.AddCommand(&cobra.Command{

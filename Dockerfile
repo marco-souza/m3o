@@ -10,13 +10,18 @@ RUN go mod download
 # copy source code
 COPY . .
 
+ENV CGO_ENABLED=0
+
+RUN go install github.com/a-h/templ/cmd/templ@latest
+
 # build the application
-RUN CGO_ENABLED=0 go build -o /app/m3o .
+RUN templ generate && go build -o /app/m3o .
 
 # development stage
 FROM builder AS development
 
 RUN go install github.com/air-verse/air@latest
+
 CMD ["air", "-c", ".air.toml"]
 
 # production stage
